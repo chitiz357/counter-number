@@ -1,0 +1,53 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.counter{
+  @extend .card;
+  border: white solid 1px;
+  border-radius: 1rem;
+  box-shadow: #eeeeee 0 0 1rem;
+  &__buttons{
+    display: flex;
+    gap: .5rem;
+  }
+  &__state{
+    font-size: xx-large;
+    &--negative{
+      @extend .counter__state;
+      color: #ef3d3e;
+    }
+    &--positive{
+      @extend .counter__state;
+      color: #38b24d;
+    }
+  }
+}
+
+.btn{
+  &--decrease{
+  background-color: #ef3d3e; 
+  }
+  &--reset{
+    background-color: #eeeeee;
+    color: black;
+  }
+  &--increase{
+    background-color: #38b24d;
+  }
+  :hover{
+    
+  }
+}
